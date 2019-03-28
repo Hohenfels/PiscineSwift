@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		592CE074224D660200174179 /* TwitterKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592CE073224D660200174179 /* TwitterKeys.swift */; };
 		59A0441D224CD23F00117F0C /* APITwitterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A0441C224CD23F00117F0C /* APITwitterDelegate.swift */; };
 		59A0441F224CD33900117F0C /* APIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A0441E224CD33900117F0C /* APIController.swift */; };
 		59FFE671224BE7CA002DA074 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59FFE670224BE7CA002DA074 /* AppDelegate.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		592CE073224D660200174179 /* TwitterKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterKeys.swift; sourceTree = "<group>"; };
 		59A0441C224CD23F00117F0C /* APITwitterDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APITwitterDelegate.swift; sourceTree = "<group>"; };
 		59A0441E224CD33900117F0C /* APIController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIController.swift; sourceTree = "<group>"; };
 		59FFE66D224BE7CA002DA074 /* Tweet42.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tweet42.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,6 +71,7 @@
 				59FFE682224BE7DE002DA074 /* TweetModel.swift */,
 				59A0441C224CD23F00117F0C /* APITwitterDelegate.swift */,
 				59A0441E224CD33900117F0C /* APIController.swift */,
+				592CE073224D660200174179 /* TwitterKeys.swift */,
 			);
 			path = Tweet42;
 			sourceTree = "<group>";
@@ -150,6 +153,7 @@
 				59FFE671224BE7CA002DA074 /* AppDelegate.swift in Sources */,
 				59A0441D224CD23F00117F0C /* APITwitterDelegate.swift in Sources */,
 				59A0441F224CD33900117F0C /* APIController.swift in Sources */,
+				592CE074224D660200174179 /* TwitterKeys.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
