@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		592CE074224D660200174179 /* TwitterKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592CE073224D660200174179 /* TwitterKeys.swift */; };
+		592CE07C224E615600174179 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592CE07A224E615600174179 /* CustomTableViewCell.swift */; };
+		592CE07D224E615600174179 /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 592CE07B224E615600174179 /* CustomTableViewCell.xib */; };
 		59A0441D224CD23F00117F0C /* APITwitterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A0441C224CD23F00117F0C /* APITwitterDelegate.swift */; };
 		59A0441F224CD33900117F0C /* APIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A0441E224CD33900117F0C /* APIController.swift */; };
 		59FFE671224BE7CA002DA074 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59FFE670224BE7CA002DA074 /* AppDelegate.swift */; };
@@ -20,6 +22,8 @@
 
 /* Begin PBXFileReference section */
 		592CE073224D660200174179 /* TwitterKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterKeys.swift; sourceTree = "<group>"; };
+		592CE07A224E615600174179 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		592CE07B224E615600174179 /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
 		59A0441C224CD23F00117F0C /* APITwitterDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APITwitterDelegate.swift; sourceTree = "<group>"; };
 		59A0441E224CD33900117F0C /* APIController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIController.swift; sourceTree = "<group>"; };
 		59FFE66D224BE7CA002DA074 /* Tweet42.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tweet42.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,6 +47,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		592CE075224E5DD800174179 /* TwitterServices */ = {
+			isa = PBXGroup;
+			children = (
+				59FFE682224BE7DE002DA074 /* TweetModel.swift */,
+				59A0441C224CD23F00117F0C /* APITwitterDelegate.swift */,
+				59A0441E224CD33900117F0C /* APIController.swift */,
+				592CE073224D660200174179 /* TwitterKeys.swift */,
+			);
+			path = TwitterServices;
+			sourceTree = "<group>";
+		};
+		592CE07E224E615D00174179 /* CustomTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				592CE07A224E615600174179 /* CustomTableViewCell.swift */,
+				592CE07B224E615600174179 /* CustomTableViewCell.xib */,
+			);
+			path = CustomTableViewCell;
+			sourceTree = "<group>";
+		};
 		59FFE664224BE7CA002DA074 = {
 			isa = PBXGroup;
 			children = (
@@ -68,10 +92,8 @@
 				59FFE677224BE7CA002DA074 /* Assets.xcassets */,
 				59FFE679224BE7CA002DA074 /* LaunchScreen.storyboard */,
 				59FFE67C224BE7CA002DA074 /* Info.plist */,
-				59FFE682224BE7DE002DA074 /* TweetModel.swift */,
-				59A0441C224CD23F00117F0C /* APITwitterDelegate.swift */,
-				59A0441E224CD33900117F0C /* APIController.swift */,
-				592CE073224D660200174179 /* TwitterKeys.swift */,
+				592CE075224E5DD800174179 /* TwitterServices */,
+				592CE07E224E615D00174179 /* CustomTableViewCell */,
 			);
 			path = Tweet42;
 			sourceTree = "<group>";
@@ -137,6 +159,7 @@
 			files = (
 				59FFE67B224BE7CA002DA074 /* LaunchScreen.storyboard in Resources */,
 				59FFE678224BE7CA002DA074 /* Assets.xcassets in Resources */,
+				592CE07D224E615600174179 /* CustomTableViewCell.xib in Resources */,
 				59FFE676224BE7CA002DA074 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -151,6 +174,7 @@
 				59FFE683224BE7DE002DA074 /* TweetModel.swift in Sources */,
 				59FFE673224BE7CA002DA074 /* ViewController.swift in Sources */,
 				59FFE671224BE7CA002DA074 /* AppDelegate.swift in Sources */,
+				592CE07C224E615600174179 /* CustomTableViewCell.swift in Sources */,
 				59A0441D224CD23F00117F0C /* APITwitterDelegate.swift in Sources */,
 				59A0441F224CD33900117F0C /* APIController.swift in Sources */,
 				592CE074224D660200174179 /* TwitterKeys.swift in Sources */,

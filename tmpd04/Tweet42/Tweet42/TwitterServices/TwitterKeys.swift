@@ -9,6 +9,6 @@
 import Foundation
 
 struct TwitterKey {
-    static let CONSUMER_KEY : String  = "U8w4mv0QMga9mBCLsV9wHLdHY"
-    static let CONSUMER_SECRET : String = "EZQ9Y5j1ejIhraqslVvMG2x3P71qSmrWRK2XXH3g8GsVn8xA6I"
+    static let CONSUMER_KEY : String  = "9dyeBth6DQEBGV0PIlozTaS5I"
+    static let CONSUMER_SECRET : String = "HcRMXQIAhKXNpCIcNN6oDXWx6eWnPpUNBhCmjj6IhW9spp2sH6"
 }
