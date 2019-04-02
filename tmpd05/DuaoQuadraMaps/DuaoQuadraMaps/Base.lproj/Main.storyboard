@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Carte-->
+        <scene sceneID="hNz-n2-bh7">
+            <objects>
+                <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="DuaoQuadraMaps" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="hCB-Xi-GMA">
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                                <connections>
+                                    <outlet property="delegate" destination="9pv-A4-QxB" id="Anz-Ne-52P"/>
+                                </connections>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Cp-SA-tMY">
+                                <rect key="frame" x="304" y="580" width="30" height="34"/>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="SpY-9R-EYN">
+                                <rect key="frame" x="87" y="575" width="201" height="29"/>
+                                <segments>
+                                    <segment title="Carte"/>
+                                    <segment title="Satellite"/>
+                                    <segment title="Hybride"/>
+                                </segments>
+                                <connections>
+                                    <action selector="mapViewSelection:" destination="9pv-A4-QxB" eventType="valueChanged" id="wjr-nW-adL"/>
+                                </connections>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lDy-Gc-0Pc">
+                                <rect key="frame" x="160" y="537" width="55" height="30"/>
+                                <state key="normal" title="Find me"/>
+                                <connections>
+                                    <action selector="findMeButton:" destination="9pv-A4-QxB" eventType="touchUpInside" id="ov5-kM-8kX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="lDy-Gc-0Pc" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" constant="517" id="EI3-J1-JlS"/>
+                            <constraint firstItem="hCB-Xi-GMA" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="GOy-fa-BUz"/>
+                            <constraint firstAttribute="trailing" secondItem="hCB-Xi-GMA" secondAttribute="trailing" id="Kh0-pU-aEb"/>
+                            <constraint firstItem="SpY-9R-EYN" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="87" id="RyK-k6-nYM"/>
+                            <constraint firstItem="4Cp-SA-tMY" firstAttribute="leading" secondItem="SpY-9R-EYN" secondAttribute="trailing" constant="16" id="YVP-hf-yl3"/>
+                            <constraint firstItem="SpY-9R-EYN" firstAttribute="centerX" secondItem="hCB-Xi-GMA" secondAttribute="centerX" id="eBp-Fv-ZBJ"/>
+                            <constraint firstItem="hCB-Xi-GMA" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" id="hXm-HZ-tgY"/>
+                            <constraint firstItem="SpY-9R-EYN" firstAttribute="top" secondItem="lDy-Gc-0Pc" secondAttribute="bottom" constant="8" symbolic="YES" id="mwH-nO-paw"/>
+                            <constraint firstItem="SpY-9R-EYN" firstAttribute="centerX" secondItem="lDy-Gc-0Pc" secondAttribute="centerX" id="ryt-DH-lDR"/>
+                            <constraint firstItem="hCB-Xi-GMA" firstAttribute="bottom" secondItem="PQr-Ze-W5v" secondAttribute="bottom" id="zU8-8L-H5P"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Carte" image="map_marker.png" selectedImage="map_marker.png" id="acW-dT-cKf">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
+                    </tabBarItem>
+                    <connections>
+                        <outlet property="mapView" destination="hCB-Xi-GMA" id="Die-7Y-ZsB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="749.60000000000002" y="-320.68965517241384"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="wg7-f3-ORb">
+            <objects>
+                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="DuaoQuadraMaps" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="uiD-y7-hBt">
+                                <rect key="frame" x="8" y="28" width="359" height="582"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexBackgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="myCell" id="r0S-8z-urp" customClass="CustomTableViewCell" customModule="DuaoQuadraMaps" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="359" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="r0S-8z-urp" id="gNN-4s-pKK">
+                                            <rect key="frame" x="0.0" y="0.0" width="359" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="8rJ-Kc-sve" id="eEl-97-ukp"/>
+                                    <outlet property="delegate" destination="8rJ-Kc-sve" id="kXh-0G-unk"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="O1u-W8-tvY" firstAttribute="bottom" secondItem="uiD-y7-hBt" secondAttribute="bottom" constant="8" id="B2k-RF-fUY"/>
+                            <constraint firstItem="uiD-y7-hBt" firstAttribute="top" secondItem="O1u-W8-tvY" secondAttribute="top" constant="8" id="nK3-aF-x2S"/>
+                            <constraint firstItem="uiD-y7-hBt" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" constant="8" id="nzn-0x-C67"/>
+                            <constraint firstItem="O1u-W8-tvY" firstAttribute="trailing" secondItem="uiD-y7-hBt" secondAttribute="trailing" constant="8" id="wbA-CR-Qsy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="bookmarks" id="cPa-gy-q4n"/>
+                    <connections>
+                        <outlet property="tableView" destination="uiD-y7-hBt" id="vNH-tm-UkT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="750" y="360"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="yl2-sM-qoP">
+            <objects>
+                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" barStyle="black" id="W28-zg-YXA">
+                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
+                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="map_marker.png" width="30" height="30"/>
+    </resources>
+</document>

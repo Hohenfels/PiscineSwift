@@ -19,7 +19,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UITableViewDataSour
     override func viewDidLoad() {
         super.viewDidLoad()
         self.delegate = self
-        tableView.register(UINib(nibName: "CustomTableViewCell", bundle: nil), forCellReuseIdentifier: "myCell")
+//        tableView.register(UINib(nibName: "CustomTableViewCell", bundle: nil), forCellReuseIdentifier: "myCell")
         oauth()
     }
 
